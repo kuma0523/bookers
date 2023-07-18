@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=ja>
+
+  <meta charset="utf-8"/>
+
+
+  <body>
+
+
+    <div>
+
+      <p class="color"><%= flash[:notice] %></p>
+
+    </div>
+
+
+      <p><strong>Title: </strong><%= @book.title %></p>
+
+
+      <p><strong>Body: </strong><%= @book.body %></p>
+
+      <a><%= link_to "Edit", edit_book_path(@book.id) %></a>
+
+      |
+
+      <a href=/books>Back</a>
+
+
+  </body>
+
+
+</html>
