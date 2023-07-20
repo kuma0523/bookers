@@ -15,7 +15,7 @@ class BooksController < ApplicationController
 
     if @book.save
 
-      flash[:notice] = "Book was successfully created."
+      flash[:notice] = "successfully Create Book."
 
       redirect_to book_path(@book.id)
 
@@ -35,6 +35,8 @@ class BooksController < ApplicationController
     @book = Book.new
 
     @books = Book.all
+
+
 
   end
 
@@ -61,7 +63,7 @@ class BooksController < ApplicationController
 
        flash[:notice] = "Book was successfully updated."
 
-    redirect_to book_path(@book.id)
+    redirect_to book_path
 
     else
 
@@ -81,7 +83,7 @@ class BooksController < ApplicationController
 
     flash[:notice] = "Book was successfully destroyd."
 
-    redirect_to '/books'
+    redirect_to books_path
 
   end
 

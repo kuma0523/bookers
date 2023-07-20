@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang=ja>
-
-  <meta charset="utf-8"/>
-
-
   <body>
 
 
     <div>
 
-      <p class="color"><%= flash[:notice] %></p>
+      <%= flash[:notice] %>
 
     </div>
 
@@ -19,14 +13,11 @@
 
       <p><strong>Body: </strong><%= @book.body %></p>
 
-      <a><%= link_to "Edit", edit_book_path(@book.id) %></a>
+      <%= link_to "Edit", edit_book_path(@book.id) %>
 
       |
 
-      <a href=/books>Back</a>
+      <%= link_to "Back", books_path %>
 
 
   </body>
-
-
-</html>

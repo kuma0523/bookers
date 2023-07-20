@@ -38,18 +38,14 @@ p{
 }
 
 
-.top_a{
-  color: #666;
-}
 
-
-.th{
+th{
   padding: 1px 1px 5px;
   font-size: 13px;
 }
 
 
-.td{
+td{
   padding: 1px 5px 7px;
   font-size: 13px;
 }
@@ -75,6 +71,3 @@ h2{
   margin-bottom: 10px;
 }
 
-.color{
-  color: green;
-}
